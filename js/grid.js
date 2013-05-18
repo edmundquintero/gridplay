@@ -21,10 +21,16 @@ $(function(){
         }else{
             $(this).addClass('selected');
         }
+        count();
     });
 
     $('#clear-all').on('click', function(){
         $('.square').removeClass('selected');
+        count();
     });
 
 });
+
+function count(){
+    $('#total-selected').html($('.selected').length);
+};
