@@ -12,16 +12,16 @@ $(function(){
         },
         mouseleave: function(){
             $(this).removeClass('highlight');
+        },
+        click: function(){
+            if($(this).hasClass('selected')){
+                $(this).removeClass('selected');
+            }else{
+                $(this).addClass('selected');
+            }
+            count();
         }
         });
-
-    $('.square').on('click', function(){
-        if($(this).hasClass('selected')){
-            $(this).removeClass('selected');
-        }else{
-            $(this).addClass('selected');
-        }
-    });
 
     $('#clear-selected').on('click', function(){
         $('.square').removeClass('selected');
