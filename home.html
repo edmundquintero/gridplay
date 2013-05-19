@@ -11,17 +11,23 @@
 </head>
 <body>
     <header>
-        <div id="top-navigation">
-
-        </div>
     </header>
     <div id="page-content">
         
         <div id="sidebar">
             <div class="well well-small">
-                <span id="total-selected">0</span> Squares Selected.
+                <span id="total-selected">0</span> Squares Selected.<br>
+                <span id="total-grass">0</span> Grass Squares.<br>
+                <span id="total-rock">0</span> Rock Squares.<br>
+                <span id="total-water">0</span> Water Squares.<br>
+                <span id="total-tree">0</span> Tree Squares.<br>
             </div>
-            <a href="#" id="clear-all" class="btn">Clear All</a>
+            <a href="#" id="clear-selected" class="btn">Clear Selection</a>
+            <a href="#" ref="tree" id="add-tree" class="btn world-item">Tree</a>
+            <a href="#" ref="water" id="add-water" class="btn world-item">Water</a>
+            <a href="#" ref="rock" id="add-rock" class="btn world-item">Rock</a>
+            <a href="#" ref="grass" id="add-grass" class="btn world-item">Grass</a>
+            <a href="#" id="reset" class="btn">Reset</a>
         </div>
         <div id="main-content">
             <div id="grid-wrapper">

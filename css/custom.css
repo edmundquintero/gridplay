@@ -20,6 +20,8 @@
     background-color: rgba(0,0,0,0.05)
 }
 .square{
+    height: 10%;
+    width: 9.75%;
     background-color: #FFF;
     float: left;
     border-radius: 3px;
@@ -30,4 +32,16 @@
 }
 .selected{
     box-shadow:0px 0px 2px 1px rgba(0,200,200,0.9);
+}
+.grass{
+    background-color: rgba(0,125,0,0.5);
+}
+.rock{
+    background-color: rgba(100,100,100,0.5);
+}
+.water{
+    background-color: rgba(30,144,255,0.5);
+}
+.tree{
+    background-color: rgba(160,82,45,0.8);
 }
